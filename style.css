@@ -1,0 +1,29 @@
+head {
+    display: none;
+}
+html:not(.aos) {
+    --global-nav-collective-height: calc(var(--r-globalnav-height) + var(--global-nav-ad-bar-height));
+}
+
+body {
+    background: white;
+  }                     
+  .container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid black;
+  }         
+
+@media only screen and (max-width: 833px)
+:root {
+    --r-localnav-height: 48px;
+    --r-localnav-stacked-height: 63px;
+    --r-localnav-gn-height: var(--r-globalnav-height, 48px);
+}
+
+html {
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size: 106.25%;
+    quotes: "“" "”";
